@@ -22,6 +22,12 @@ lib-cov
 coverage
 *.lcov
 
+
+# IDEA
+*.iml
+.idea
+
+
 # nyc test coverage
 .nyc_output
 
