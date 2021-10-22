@@ -1,16 +1,15 @@
 const path =require("path")
 
 const express = require ('express')
-
-
 const app = express()
 const { config, engine } = require('express-edge');
+const mongoose = require('mongoose')
+
 
 app.use(express.static('public'))
 app.use(engine)
 
-
-
+mongoose.connect('mongodb://localhost/mode-js-blog')
 
 
 app.set('views', `${__dirname}/views`);
